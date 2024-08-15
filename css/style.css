@@ -71,6 +71,22 @@ html {
 
 /* REUSABLE COMPONENTS */
 
+.grid {
+  display: grid;
+}
+
+.grid-2cols {
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 4.8rem;
+  column-gap: 6.4rem;
+}
+
+.grid-3cols {
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 4.8rem;
+  column-gap: 6.4rem;
+}
+
 .nav-link.btn:link,
 .nav-link.btn:visited {
   display: inline-block;
@@ -159,6 +175,11 @@ a.btn-lg-secondary:active {
   margin-bottom: 1.6rem;
 }
 
+.container {
+  margin: 0 auto;
+  max-width: 120rem;
+}
+
 /* Header */
 header {
   display: flex;
@@ -195,20 +216,13 @@ header {
   color: var(--primary-color-shade);
 }
 
+/* ******************* */
 /* Section Hero */
+/* ******************* */
 
 .section-hero {
   background-color: var(--primary-color-tint);
   padding: 4rem 4rem 9.6rem 4rem;
-}
-
-.container {
-  margin: 0 auto;
-  max-width: 120rem;
-  display: flex;
-  align-items: start;
-  justify-content: space-between;
-  gap: 4.8rem;
 }
 
 .hero-image img {
@@ -244,4 +258,118 @@ header {
 
 .meals-text {
   color: var(--primary-color);
+}
+
+/* ******************* */
+/* Section Featured In */
+/* ******************* */
+
+.subheading {
+  text-transform: uppercase;
+  color: var(--text-color-light);
+  margin-bottom: 2.4rem;
+  font-size: 1.4rem;
+}
+
+.container-v {
+  margin: 4.8rem auto;
+  max-width: 120rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logos {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 4.8rem;
+}
+
+.logo {
+  filter: brightness(0);
+  opacity: 0.5;
+  /* height: 3.2rem; */
+}
+
+/* ******************* */
+/* Section How it works */
+/* ******************* */
+
+.section-how-it-works {
+  margin: 3.2rem 0;
+}
+
+.section-how-it-works .subheading {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  color: var(--primary-color);
+  font-weight: 500;
+  align-self: flex-start;
+}
+
+.heading {
+  font-size: 4.4rem;
+  color: #333;
+  align-self: flex-start;
+  font-weight: 700;
+}
+
+/* ******************* */
+/* Section Steps */
+/* ******************* */
+
+.section-steps {
+  margin: 3.2rem 0;
+}
+.img-step-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.img-step {
+  width: 35%;
+}
+
+.img-step-box::after,
+.img-step-box::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.img-step-box::after {
+  width: 45%;
+  padding-bottom: 45%;
+  background-color: #fae5d3;
+}
+.img-step-box::before {
+  width: 60%;
+  padding-bottom: 60%;
+  background-color: #fdf2e9;
+}
+
+.step-no {
+  font-size: 8.6rem;
+  font-weight: 600;
+  color: #ccc;
+}
+
+.step-heading {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.step-text {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  font-weight: 300;
 }
