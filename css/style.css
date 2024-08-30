@@ -91,6 +91,11 @@ html {
   row-gap: 3.2rem;
   column-gap: 4.8rem;
 }
+.grid-4cols {
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 3.2rem;
+  column-gap: 3.2rem;
+}
 
 .text-center {
   text-align: center;
@@ -571,6 +576,20 @@ figcaption {
 
 .pricing-plan-complete {
   background-color: var(--primary-color-tint);
+  position: relative;
+  overflow: hidden;
+}
+.pricing-plan-complete::after {
+  content: 'best value';
+  position: absolute;
+  top: 30px;
+  right: -50px;
+  background-color: #ffe066;
+  padding: 0.4rem 4.8rem;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: 600;
+  transform: rotate(45deg);
 }
 
 .pricing-plan-title {
@@ -602,4 +621,35 @@ figcaption {
 
 .meals-list {
   margin-bottom: 3.2rem;
+}
+
+.pricing-text {
+  font-size: 1.8rem;
+}
+
+.feature-icon {
+  color: var(--primary-color);
+  font-size: 3.6rem;
+  display: block;
+  background-color: var(--primary-color-tint);
+  padding: 1.2rem;
+  width: 6.4rem;
+  height: 6.4rem;
+  border-radius: 50%;
+  margin-bottom: 2.4rem;
+  text-align: center;
+}
+
+.feature-heading {
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+  color: var(--text-color);
+}
+
+.feature-text {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--text-color-light);
 }
