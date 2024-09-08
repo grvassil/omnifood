@@ -96,6 +96,11 @@ html {
   row-gap: 3.2rem;
   column-gap: 3.2rem;
 }
+.grid-5cols {
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+  row-gap: 3.2rem;
+  column-gap: 2.4rem;
+}
 
 .text-center {
   text-align: center;
@@ -744,4 +749,64 @@ form select {
 .cta-btn:hover {
   background-color: #fff;
   color: #333;
+}
+
+/* ******************* */
+/* Footer */
+/* ******************* */
+
+.footer {
+  margin: 12.8rem 0;
+  padding: 4.8rem 0;
+  border-top: 2px solid var(--primary-color-tint);
+}
+
+.footer-logo {
+  width: 16rem;
+  margin-bottom: 2.4rem;
+}
+
+.social-heading {
+  font-size: 1.8rem;
+  margin-bottom: 1.6rem;
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+.footer-item {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: var(--text-color-light);
+}
+
+.social-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.social-icons {
+  display: flex;
+  list-style: none;
+  gap: 3.2rem;
+  margin-bottom: 2.4rem;
+}
+
+.social-icons a {
+  font-size: 2.4rem;
+}
+
+.social-text,
+.social-address {
+  font-size: 1.6rem;
+  margin-bottom: 1.6rem;
+}
+
+.address a {
+  display: block;
+  margin-bottom: 1.2rem;
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: var(--text-color);
 }
